@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export function GetDataStarWarsApi() {
     const urlPeople = 'https://www.swapi.tech/api/people/';
+    const [dataPeople, setDataPeople] = useState([]);
     const [people, setPeople] = useState([]);
 
     useEffect(() => {
@@ -24,11 +25,18 @@ export function GetDataStarWarsApi() {
 
     return (
         <>
-            <ul>
-                {people.map((person) => (
-                    <li key={person.uid}>{person.name}</li>
-                ))}
-            </ul>
+        {people.map((person) => (
+            <div classNameName="card" style={{width: "18rem;"}}>
+            <img className="card-img-top" src="..." alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="card-title">{person.name}</h5>
+              <p className="card-text">{person.uid}</p>
+              <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        ))}
+        
         </>
     );
 }
