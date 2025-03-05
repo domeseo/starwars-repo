@@ -12,6 +12,9 @@ import { MoviesPage } from "./pages/Movies";
 import { PeoplePage } from "./pages/People";
 import PeopleV2 from "./components/PeopleV2";
 import CharacterDetail from "./components/CharacterDetail";
+import Planets from "./components/planet";
+import PlanetDetail from "./components/PlanetDetail";
+
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +33,8 @@ export const router = createBrowserRouter(
       <Route path="/movies" element={<MoviesPage />} />
       <Route path="/characters" element={<PeopleV2 />} />
       <Route path="/character/:id" element={<CharacterDetail />} />
+      <Route path="/planets" element={<Planets />} />
+      <Route path="/planets/:id" element={<PlanetDetail />} />
     </Route>
   )
 );
