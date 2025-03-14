@@ -12,6 +12,7 @@ export const Home = () => {
 					<Card className="h-100 shadow-sm hover-card">
 						<Card.Body className="d-flex flex-column">
 							<Card.Title className="text-center mb-4">Películas</Card.Title>
+							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
 							<Card.Text className="text-center">
 								Explora todas las películas de la saga Star Wars
 							</Card.Text>
@@ -28,6 +29,7 @@ export const Home = () => {
 					<Card className="h-100 shadow-sm hover-card">
 						<Card.Body className="d-flex flex-column">
 							<Card.Title className="text-center mb-4">Personajes</Card.Title>
+							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
 							<Card.Text className="text-center">
 								Conoce todos los personajes del universo Star Wars
 							</Card.Text>
@@ -44,6 +46,7 @@ export const Home = () => {
 					<Card className="h-100 shadow-sm hover-card">
 						<Card.Body className="d-flex flex-column">
 							<Card.Title className="text-center mb-4">Planetas</Card.Title>
+							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
 							<Card.Text className="text-center">
 								Descubre los planetas de la galaxia Star Wars
 							</Card.Text>

@@ -8,8 +8,6 @@ export const MoviesPage = () => {
 
             <Films />
 
-
-
         </div>
     );
 }; 

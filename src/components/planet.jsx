@@ -34,6 +34,7 @@ function Planets() {
                         <Card className="h-100 shadow-sm">
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title className="text-center">{planeta.name}</Card.Title>
+                                <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
                                 <Card.Text>
                                     <strong>Altura:</strong> {planeta.diameter} cm<br />
                                     <strong>Peso:</strong> {planeta.film} kg<br />

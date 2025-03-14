@@ -8,7 +8,9 @@ export const PeoplePage = () => {
     return (
         <div className="text-center mt-5">
 
+
             <PeopleV2 />
+            <Loading />
 
 
 

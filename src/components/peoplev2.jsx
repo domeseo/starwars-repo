@@ -34,6 +34,7 @@ function PeopleV2() {
                         <Card className="h-100 shadow-sm">
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title className="text-center">{personaje.name}</Card.Title>
+                                <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
                                 <Card.Text>
                                     <strong>Altura:</strong> {personaje.height} cm<br />
                                     <strong>Peso:</strong> {personaje.mass} kg<br />
@@ -47,7 +48,7 @@ function PeopleV2() {
                         </Card>
                     </Col>
                 ))}
-            </Row>∫
+            </Row>
         </Container>
     );
 }

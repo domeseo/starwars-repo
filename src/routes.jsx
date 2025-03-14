@@ -15,7 +15,6 @@ import CharacterDetail from "./components/CharacterDetail";
 import Planets from "./components/planet";
 import PlanetDetail from "./components/PlanetDetail";
 
-
 export const router = createBrowserRouter(
   createRoutesFromElements(
     // CreateRoutesFromElements function allows you to build route elements declaratively.
