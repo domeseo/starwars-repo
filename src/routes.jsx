@@ -14,7 +14,9 @@ import PeopleV2 from "./components/PeopleV2";
 import CharacterDetail from "./components/CharacterDetail";
 import Planets from "./components/planet";
 import PlanetDetail from "./components/PlanetDetail";
-
+import StarshipPage from "./pages/StarshipPage";
+import StarshipDetails from "./components/StarshipDetails";
+import Favorites from "./pages/Favorites";
 export const router = createBrowserRouter(
   createRoutesFromElements(
     // CreateRoutesFromElements function allows you to build route elements declaratively.
@@ -34,6 +36,9 @@ export const router = createBrowserRouter(
       <Route path="/character/:id" element={<CharacterDetail />} />
       <Route path="/planets" element={<Planets />} />
       <Route path="/planets/:id" element={<PlanetDetail />} />
+      <Route path="/starships" element={<StarshipPage />} />
+      <Route path="/starships/:id" element={<StarshipDetails />} />
+      <Route path="/favorites" element={<Favorites />} />
     </Route>
   )
 );

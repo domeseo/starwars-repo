@@ -58,32 +58,23 @@ export const Home = () => {
 						</Card.Body>
 					</Card>
 				</Col>
+				<Col md={4} className="mb-4">
+					<Card className="h-100 shadow-sm hover-card">
+						<Card.Body className="d-flex flex-column">
+							<Card.Title className="text-center mb-4">Naves</Card.Title>
+							<Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Character" />
+							<Card.Text className="text-center">
+								Descubre las naves de la galaxia Star Wars
+							</Card.Text>
+							<div className="mt-auto text-center">
+								<Link to="/starships" className="btn btn-primary">
+									Ver Naves
+								</Link>
+							</div>
+						</Card.Body>
+					</Card>
+				</Col>
 			</Row>
-
-			<style>
-				{`
-					.hover-card {
-						transition: transform 0.3s ease;
-					}
-					.hover-card:hover {
-						transform: translateY(-10px);
-					}
-					.card {
-						background-color: rgba(255, 255, 255, 0.9);
-						border: none;
-						border-radius: 15px;
-					}
-					.btn-primary {
-						background-color: #007bff;
-						border: none;
-						padding: 10px 20px;
-						border-radius: 5px;
-					}
-					.btn-primary:hover {
-						background-color: #0056b3;
-					}
-				`}
-			</style>
 		</Container>
 	);
 };

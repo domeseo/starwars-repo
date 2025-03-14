@@ -17,7 +17,12 @@ export const Navbar = () => {
 					</Link>
 					<Link to="/planets">
 						<button className="btn btn-primary mx-1">Planets</button></Link>
-
+					<Link to="/starships">
+						<button className="btn btn-primary mx-1">Starships</button>
+					</Link>
+					<Link to="/favorites">
+						<button className="btn btn-primary mx-1">Favorites</button>
+					</Link>
 				</div>
 			</div>
 		</nav>
