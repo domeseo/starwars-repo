@@ -6,11 +6,22 @@ export const Navbar = () => {
 		<nav className="navbar navbar-light bg-light">
 			<div className="container">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+					<span className="navbar-brand mb-0 h1">StarWars DB</span>
 				</Link>
 				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
+					<Link to="/movies">
+						<button className="btn btn-primary mx-1">Movies</button>
+					</Link>
+					<Link to="/characters">
+						<button className="btn btn-primary mx-1">Characters</button>
+					</Link>
+					<Link to="/planets">
+						<button className="btn btn-primary mx-1">Planets</button></Link>
+					<Link to="/starships">
+						<button className="btn btn-primary mx-1">Starships</button>
+					</Link>
+					<Link to="/favorites">
+						<button className="btn btn-primary mx-1">Favorites</button>
 					</Link>
 				</div>
 			</div>
