@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import FavoriteButton from './FavoriteButton';
 function PeopleV2() {
     const [personas, setPersonas] = useState([]);
     const [eachPerson, setEachPerson] = useState([]);
@@ -43,6 +43,7 @@ function PeopleV2() {
                                     <Link to={`/character/${indice + 1}`}>
                                         <Button variant="primary">Ver Ficha Completa</Button>
                                     </Link>
+                                    <FavoriteButton item={personaje} />
                                 </div>
                             </Card.Body>
                         </Card>

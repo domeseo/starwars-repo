@@ -96,7 +96,7 @@ function StarshipDetails() {
                                     </div>
                                 </Card.Body>
                             </Col>
-                            <FavoriteButton item={Naves} onFavoriteClick={handleFavoriteClick} />
+                            <FavoriteButton item={Naves} />
                         </Row>
                     </Card>
                 </Col>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import FavoriteButton from './FavoriteButton';
 
 function PlanetDetail() {
     const { id } = useParams();
@@ -95,6 +96,7 @@ function PlanetDetail() {
                                             <Link to="/planets">
                                                 <Button variant="secondary">Volver a la lista</Button>
                                             </Link>
+                                            <FavoriteButton item={planet} />
                                         </div>
                                     </div>
                                 </Card.Body>

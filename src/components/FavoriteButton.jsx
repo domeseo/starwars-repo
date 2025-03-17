@@ -9,17 +9,21 @@ const FavoriteButton = ({ item }) => {
         setIsFavorite(IsFavorite(item));
     }, [item]);
 
-    const handleClick = () => {
-        setIsFavorite(!isFavorite);
-    };
-
-    const CreateFavorite = () => {
-        localStorage.setItem('favorites', JSON.stringify([]));
-    };
-
     const GetFavorites = () => {
         const favorites = localStorage.getItem('favorites');
         return favorites ? JSON.parse(favorites) : [];
+    };
+
+    // Verifica si un elemento está en favoritos
+    const IsFavorite = (item) => {
+        const favorites = GetFavorites();
+        // Usar url o name/title como identificador único
+        const identifier = item.url || item.name || item.title;
+        return favorites.some(fav =>
+            (fav.url && fav.url === identifier) ||
+            (fav.name && fav.name === item.name) ||
+            (fav.title && fav.title === item.title)
+        );
     };
 
     const AddFavorite = (item) => {
@@ -32,16 +36,16 @@ const FavoriteButton = ({ item }) => {
 
     const RemoveFavorite = (item) => {
         const favorites = GetFavorites();
-        const index = favorites.indexOf(item);
-        if (index !== -1) {
-            favorites.splice(index, 1);
-            localStorage.setItem('favorites', JSON.stringify(favorites));
-        }
-    };
+        const identifier = item.url || item.name || item.title;
 
-    const IsFavorite = (item) => {
-        const favorites = GetFavorites();
-        return favorites.includes(item);
+        // Filtrar el elemento que queremos eliminar
+        const updatedFavorites = favorites.filter(fav =>
+            !(fav.url === identifier ||
+                fav.name === item.name ||
+                fav.title === item.title)
+        );
+
+        localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     };
 
     const handleFavorite = () => {
