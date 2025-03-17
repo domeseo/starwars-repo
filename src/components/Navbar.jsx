@@ -21,7 +21,7 @@ export const Navbar = () => {
 						<button className="btn btn-primary mx-1">Starships</button>
 					</Link>
 					<Link to="/favorites">
-						<button className="btn btn-primary mx-1">Favorites</button>
+						<button className="btn btn-danger mx-1"><i className="fa-solid fa-star"></i></button>
 					</Link>
 				</div>
 			</div>
